@@ -37,24 +37,36 @@ export default function Home() {
         alt="The clock"
       />
       <div className="relative z-10 text-center h-full flex flex-col justify-center items-center">
-        <h1 className="text-7xl bg-[#d9a664] py-5 text-primary-50 mb-8 tracking-tight text-[#F8F6E0] font-normal">
+        <h1 className="text-7xl bg-primary-light py-5 text-primary-50 mb-8 tracking-tight text-[#F8F6E0] font-normal">
         Ready to See Time in Style?
         </h1>
-        <div className="text-5xl bg-[#d9a664] py-5 px-8 text-[#F8F6E0] mb-8 font-mono">
+        <div className="text-5xl bg-primary-light py-5 px-8 text-[#F8F6E0] mb-8 font-mono">
           {formatTime(currentTime)}
         </div>
         <div className="flex gap-4">
           <Link
             href="/clock"
-            className="bg-[#d9a664] px-8 py-6 text-[#211A11] text-lg font-semibold hover:bg-[#cd9a57] transition-all"
+            className="bg-primary-light px-8 py-6 text-secondary-dark text-lg font-semibold hover:bg-primary-dark transition-all"
           >
             View the Time on Clock
           </Link>
           <Link
             href="/stopwatch"
-            className="bg-[#d9a664] px-8 py-6 text-[#211A11] text-lg font-semibold hover:bg-[#cd9a57] transition-all"
+            className="bg-primary-light px-8 py-6 text-secondary-dark text-lg font-semibold hover:bg-primary-dark transition-all"
           >
             Stopwatch
+          </Link>
+          <Link
+            href="/timer"
+            className="bg-primary-light px-8 py-6 text-secondary-dark text-lg font-semibold hover:bg-primary-dark transition-all"
+          >
+            Timer
+          </Link>
+          <Link
+            href="/age-calculator"
+            className="bg-primary-light px-8 py-6 text-secondary-dark text-lg font-semibold hover:bg-primary-dark transition-all"
+          >
+            Age Calculator
           </Link>
         </div>
        

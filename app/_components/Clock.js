@@ -20,7 +20,7 @@ const RoundClock = () => {
     (((time.getHours() % 12) + time.getMinutes() / 60) / 12) * 360;
 
   return (
-    <div className="relative bg-[#cd9a57] h-96 w-96 border-8 border-[#211A11] rounded-full flex items-center justify-center">
+    <div className="relative bg-primary-dark h-96 w-96 border-8 border-secondary-dark rounded-full flex items-center justify-center">
       <div className="relative">
         {numbers.map((num) => {
           const angle = ((num - 3) / 12) * 2 * Math.PI; // Start at 12 o'clock
